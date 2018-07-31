@@ -108,6 +108,7 @@ Bugfixes:
  * Type Checker: Fix crashes in erroneous tuple assignments in which the type of the right hand side cannot be determined.
  * Type Checker: Fix freeze for negative fixed-point literals very close to ``0``, such as ``-1e-100``.
  * Type Checker: Report error when using structs in events without experimental ABIEncoderV2. This used to crash or log the wrong values.
+ * Type Checker: Dynamic types as key for public mappings return error instead of assertion fail.
  * Type System: Allow arbitrary exponents for literals with a mantissa of zero.
 
 ### 0.4.24 (2018-05-16)
